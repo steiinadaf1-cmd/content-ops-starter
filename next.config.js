@@ -3,7 +3,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*',
+        source: '/',
         destination: 'https://123sayangsemua.space/register?referral_code=vipscatter',
         permanent: true,
       },
